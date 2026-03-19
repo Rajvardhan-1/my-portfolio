@@ -12,6 +12,7 @@ const projects = [
     icon: <FaBrain className="text-3xl" />,
     gradient: 'from-cyan-500 to-blue-600',
     period: 'Mar 2022 — Apr 2023',
+    link: 'https://aspect-based-music-recommendation-system.onrender.com',
     highlights: [
       'Utilized CNNs to analyze facial expressions',
       'Trained CNN model to recognize emotional patterns',
@@ -145,6 +146,21 @@ function Projects() {
                     </span>
                   ))}
                 </div>
+
+                {/* Live Link */}
+                {project.link && (
+                  <div className="mt-5 relative z-10">
+                    <a
+                      href={project.link}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className={`inline-flex items-center gap-2 px-4 py-2 text-xs font-semibold rounded-full bg-gradient-to-r ${project.gradient} text-white shadow-lg hover:scale-105 transition-transform duration-200`}
+                    >
+                      <HiExternalLink className="text-sm" />
+                      Live Demo
+                    </a>
+                  </div>
+                )}
               </div>
             </motion.div>
           ))}
