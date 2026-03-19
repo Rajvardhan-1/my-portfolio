@@ -2,7 +2,7 @@ import { motion, useInView } from 'framer-motion';
 import { useRef, useState } from 'react';
 import { HiExternalLink } from 'react-icons/hi';
 import { SiPython, SiReact } from 'react-icons/si';
-import { FaBrain, FaMusic } from 'react-icons/fa';
+import { FaBrain, FaMusic, FaCode, FaJava } from 'react-icons/fa';
 
 const projects = [
   {
@@ -29,6 +29,32 @@ const projects = [
       'Content-based and collaborative filtering',
       'Preprocessed large dataset of songs',
       'Clustering and classification algorithms',
+    ],
+  },
+  {
+    title: 'Personal Portfolio Website',
+    description: 'A dark-themed, interactive personal portfolio single-page application built with React and Tailwind CSS v4. Features modern glassmorphism UI, scroll animations, and a deeply optimized print-to-resume functionality.',
+    tech: ['React JS', 'Tailwind CSS', 'Framer Motion', 'Vite'],
+    icon: <FaCode className="text-3xl" />,
+    gradient: 'from-emerald-500 to-teal-600',
+    period: 'Mar 2026',
+    highlights: [
+      'Built dark-theme design system in Tailwind v4',
+      'Engineered @media print styling for 1-click PDF resume',
+      'Framer Motion scroll and hover animations',
+    ],
+  },
+  {
+    title: 'User Registration Form',
+    description: 'A personal project featuring a user registration form built using Java. Focuses on input validation, secure data handling, and applying Object-Oriented Programming (OOP) principles.',
+    tech: ['Java', 'OOP', 'Core Java'],
+    icon: <FaJava className="text-3xl" />,
+    gradient: 'from-orange-500 to-red-600',
+    period: 'Personal Project',
+    highlights: [
+      'Core Java implementation',
+      'User input validation and secure handling',
+      'Object-Oriented Programming (OOP) principles',
     ],
   },
 ];
