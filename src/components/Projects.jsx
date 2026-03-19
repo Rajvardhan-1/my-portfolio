@@ -39,7 +39,7 @@ function Projects() {
   const [hoveredIndex, setHoveredIndex] = useState(null);
 
   return (
-    <section id="projects" className="relative py-24 px-6">
+    <section id="projects" className="relative py-36 px-6">
       <div className="gradient-orb w-[400px] h-[400px] bg-pink-500 bottom-[0] right-[-5%]" />
 
       <div className="max-w-6xl mx-auto" ref={ref}>
@@ -48,7 +48,7 @@ function Projects() {
           initial={{ opacity: 0, y: 30 }}
           animate={isInView ? { opacity: 1, y: 0 } : {}}
           transition={{ duration: 0.6 }}
-          className="text-center mb-16"
+          className="text-center mb-20"
         >
           <h2 className="text-4xl sm:text-5xl font-bold font-[Outfit] mb-4 section-heading">
             My <span className="gradient-text">Projects</span>

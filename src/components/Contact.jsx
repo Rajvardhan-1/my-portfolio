@@ -50,7 +50,7 @@ function Contact() {
   };
 
   return (
-    <section id="contact" className="relative py-24 px-6">
+    <section id="contact" className="relative py-36 px-6">
       <div className="gradient-orb w-[400px] h-[400px] bg-cyan-500 bottom-[-10%] left-[-5%]" />
       <div className="gradient-orb w-[300px] h-[300px] bg-purple-600 top-[10%] right-[-5%]" />
 
@@ -60,7 +60,7 @@ function Contact() {
           initial={{ opacity: 0, y: 30 }}
           animate={isInView ? { opacity: 1, y: 0 } : {}}
           transition={{ duration: 0.6 }}
-          className="text-center mb-16"
+          className="text-center mb-20"
         >
           <h2 className="text-4xl sm:text-5xl font-bold font-[Outfit] mb-4 section-heading">
             Get In <span className="gradient-text">Touch</span>

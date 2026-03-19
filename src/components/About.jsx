@@ -26,7 +26,7 @@ function About() {
   const isInView = useInView(ref, { once: true, margin: '-100px' });
 
   return (
-    <section id="about" className="relative py-24 px-6">
+    <section id="about" className="relative py-36 px-6">
       {/* Background */}
       <div className="gradient-orb w-[400px] h-[400px] bg-purple-600 top-[0] right-[-5%]" />
 
@@ -36,7 +36,7 @@ function About() {
           initial={{ opacity: 0, y: 30 }}
           animate={isInView ? { opacity: 1, y: 0 } : {}}
           transition={{ duration: 0.6 }}
-          className="text-center mb-16"
+          className="text-center mb-20"
         >
           <h2 className="text-4xl sm:text-5xl font-bold font-[Outfit] mb-4 section-heading">
             About <span className="gradient-text">Me</span>

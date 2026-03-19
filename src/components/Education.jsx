@@ -37,7 +37,7 @@ function Education() {
   const isInView = useInView(ref, { once: true, margin: '-100px' });
 
   return (
-    <section id="education" className="relative py-24 px-6">
+    <section id="education" className="relative py-36 px-6">
       <div className="gradient-orb w-[350px] h-[350px] bg-blue-500 top-[20%] right-[-5%]" />
 
       <div className="max-w-5xl mx-auto" ref={ref}>
@@ -46,7 +46,7 @@ function Education() {
           initial={{ opacity: 0, y: 30 }}
           animate={isInView ? { opacity: 1, y: 0 } : {}}
           transition={{ duration: 0.6 }}
-          className="text-center mb-16"
+          className="text-center mb-20"
         >
           <h2 className="text-4xl sm:text-5xl font-bold font-[Outfit] mb-4 section-heading">
             My <span className="gradient-text">Education</span>
