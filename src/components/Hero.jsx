@@ -136,10 +136,10 @@ function Hero() {
             <FaEnvelope className="text-sm" />
             Contact Me
           </a>
-          <button onClick={() => window.print()} className="glow-btn glow-btn-outline flex items-center gap-2 cursor-pointer">
+          <a href="#projects" className="glow-btn glow-btn-outline flex items-center gap-2">
             <HiDownload className="text-lg" />
-            Print Resume
-          </button>
+            View Projects
+          </a>
         </motion.div>
 
         {/* Social Icons */}
