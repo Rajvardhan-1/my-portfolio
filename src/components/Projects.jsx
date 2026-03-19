@@ -26,6 +26,7 @@ const projects = [
     icon: <FaMusic className="text-3xl" />,
     gradient: 'from-purple-500 to-pink-600',
     period: 'Mar 2022 — Apr 2022',
+    link: '#',
     highlights: [
       'Content-based and collaborative filtering',
       'Preprocessed large dataset of songs',
@@ -39,6 +40,7 @@ const projects = [
     icon: <FaCode className="text-3xl" />,
     gradient: 'from-emerald-500 to-teal-600',
     period: 'Mar 2026',
+    link: 'https://rajfoliodev.vercel.app/',
     highlights: [
       'Built dark-theme design system in Tailwind v4',
       'Engineered @media print styling for 1-click PDF resume',
@@ -52,6 +54,7 @@ const projects = [
     icon: <FaJava className="text-3xl" />,
     gradient: 'from-orange-500 to-red-600',
     period: 'Personal Project',
+    link: 'https://fullstackjava-2.onrender.com/',
     highlights: [
       'Core Java implementation',
       'User input validation and secure handling',
