@@ -7,6 +7,7 @@ import Education from './components/Education';
 import Contact from './components/Contact';
 import Footer from './components/Footer';
 
+
 function App() {
   return (
     <div className="min-h-screen bg-[#0a0a0f] text-gray-200">
@@ -18,8 +19,10 @@ function App() {
       <Education />
       <Contact />
       <Footer />
+
     </div>
   );
 }
+
 
 export default App;

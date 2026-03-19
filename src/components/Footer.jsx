@@ -1,4 +1,5 @@
 import { FaLinkedinIn, FaGithub, FaEnvelope, FaHeart } from 'react-icons/fa';
+import { HiPrinter } from 'react-icons/hi';
 
 function Footer() {
   return (
@@ -26,8 +27,16 @@ function Footer() {
             ))}
           </div>
         </div>
-        <div className="mt-8 pt-6 border-t border-white/5 text-center">
+        <div className="mt-8 pt-6 border-t border-white/5 flex flex-col sm:flex-row items-center justify-between gap-4">
           <p className="text-xs text-gray-600">© 2026 Rajvardhan. Made with <FaHeart className="inline text-red-500 mx-0.5" /> using React & Tailwind CSS</p>
+          <button
+            onClick={() => window.print()}
+            className="flex items-center gap-2 px-4 py-2 rounded-full bg-white/5 border border-white/10 text-gray-400 hover:text-cyan-400 hover:border-cyan-500/30 hover:shadow-cyan-500/10 hover:shadow-lg transition-all duration-300 print:hidden cursor-pointer group"
+            title="Print Resume"
+          >
+            <HiPrinter className="text-lg text-cyan-400 group-hover:text-cyan-300 transition-colors" />
+            <span className="font-medium text-sm">Print Resume</span>
+          </button>
         </div>
       </div>
     </footer>
