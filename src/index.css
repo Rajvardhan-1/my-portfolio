@@ -294,3 +294,79 @@ body {
 .contact-input::placeholder {
   color: #64748b;
 }
+
+/* ===== Print Resume Styling ===== */
+@media print {
+  @page {
+    margin: 1.5cm;
+    size: A4;
+  }
+  
+  html, body {
+    background: #ffffff !important;
+    color: #000000 !important;
+    overflow: visible !important;
+    scroll-behavior: auto !important;
+  }
+
+  /* Hide non-resume elements */
+  nav, footer, .gradient-orb, .glow-btn, .bg-grid, 
+  #mobile-menu-toggle, form, .contact-input {
+    display: none !important;
+  }
+
+  /* Strip formatting for ink conservation and clean layout */
+  * {
+    background: transparent !important;
+    color: #000000 !important;
+    box-shadow: none !important;
+    text-shadow: none !important;
+    border-color: #e5e7eb !important;
+    transition: none !important;
+    transform: none !important;
+    animation: none !important;
+    opacity: 1 !important;
+  }
+
+  /* Force gradients to flat solid black */
+  .gradient-text, .gradient-text-cyan {
+    background: none !important;
+    -webkit-text-fill-color: #000000 !important;
+  }
+  
+  .section-heading::after {
+    background: #000 !important;
+  }
+
+  /* Strip Glassmorphism */
+  .glass-card, .glass-card-hover {
+    border: none !important;
+    padding: 0 !important;
+    margin-bottom: 1.5rem !important;
+  }
+
+  /* Adjust spacing to fit on pages naturally */
+  section {
+    padding: 1rem 0 !important;
+    margin: 0 !important;
+    page-break-inside: avoid;
+  }
+
+  h1, h2 { 
+    page-break-after: avoid; 
+  }
+
+  /* Timeline flattening */
+  .timeline-line { display: none !important; }
+  
+  /* Reset grid/flex arrays for printing vertical rhythm */
+  .grid {
+    display: block !important;
+  }
+  
+  .print-flex-row {
+    display: flex !important;
+    flex-direction: row !important;
+    justify-content: space-between !important;
+  }
+}

@@ -104,17 +104,22 @@ function Hero() {
           initial={{ opacity: 0, y: 30 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6, delay: 0.3 }}
-          className="text-xl sm:text-2xl md:text-3xl font-medium text-gray-400 mb-8 h-10"
+          className="text-xl sm:text-2xl md:text-3xl font-medium text-gray-400 mb-8 h-10 print:hidden"
         >
           <span className="typing-cursor">{text}</span>
         </motion.div>
+
+        {/* Print-only static role */}
+        <div className="hidden print:block text-2xl font-medium mb-6">
+          Full Stack Developer & Software Engineer
+        </div>
 
         {/* Summary */}
         <motion.p
           initial={{ opacity: 0, y: 30 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6, delay: 0.45 }}
-          className="text-base sm:text-lg text-gray-500 max-w-2xl mx-auto mb-10 leading-relaxed"
+          className="text-base sm:text-lg text-gray-500 max-w-2xl mx-auto mb-10 leading-relaxed print:text-left print:mx-0 print:mb-8"
         >
           Computer Science graduate with a passion for building innovative web applications
           and exploring machine learning. Turning ideas into elegant, functional code.
@@ -125,16 +130,16 @@ function Hero() {
           initial={{ opacity: 0, y: 30 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6, delay: 0.6 }}
-          className="flex flex-col sm:flex-row items-center justify-center gap-4 mb-12"
+          className="flex flex-col sm:flex-row items-center justify-center gap-4 mb-12 print:hidden"
         >
           <a href="#contact" className="glow-btn glow-btn-primary flex items-center gap-2">
             <FaEnvelope className="text-sm" />
             Contact Me
           </a>
-          <a href="#projects" className="glow-btn glow-btn-outline flex items-center gap-2">
+          <button onClick={() => window.print()} className="glow-btn glow-btn-outline flex items-center gap-2 cursor-pointer">
             <HiDownload className="text-lg" />
-            View Projects
-          </a>
+            Print Resume
+          </button>
         </motion.div>
 
         {/* Social Icons */}
