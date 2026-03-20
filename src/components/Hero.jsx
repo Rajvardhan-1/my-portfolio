@@ -45,7 +45,7 @@ function Hero() {
   ];
 
   return (
-    <section id="home" className="relative min-h-screen flex items-center justify-center overflow-hidden">
+    <section id="home" className="relative min-h-screen flex items-center justify-center overflow-hidden px-10">
       {/* Background Effects */}
       <div className="absolute inset-0 bg-grid" />
       <div className="gradient-orb w-[500px] h-[500px] bg-cyan-500 top-[-10%] right-[-10%]" />

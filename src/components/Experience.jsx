@@ -37,10 +37,10 @@ function Experience() {
   const isInView = useInView(ref, { once: true, margin: '-100px' });
 
   return (
-    <section id="experience" className="relative py-36 px-6">
+    <section id="experience" className="relative min-h-screen py-24 px-10 flex items-center justify-center">
       <div className="gradient-orb w-[350px] h-[350px] bg-cyan-500 top-[10%] left-[-5%]" />
 
-      <div className="max-w-5xl mx-auto" ref={ref}>
+      <div className="max-w-4xl mx-auto" ref={ref}>
         {/* Section Title */}
         <motion.div
           initial={{ opacity: 0, y: 30 }}
@@ -78,7 +78,7 @@ function Experience() {
               <div className="hidden md:block md:w-1/2 flex-shrink-0" />
 
               {/* Card */}
-              <div className={`w-full pl-16 md:pl-0 md:w-1/2 flex-shrink-0 ${i % 2 === 0 ? 'md:pr-12' : 'md:pl-12'}`}>
+              <div className={`w-full pl-12 pr-4 md:pl-0 md:pr-0 md:w-1/2 flex-shrink-0 ${i % 2 === 0 ? 'md:pr-12' : 'md:pl-12'}`}>
                 <div className="glass-card-hover p-6 md:p-8 block w-full relative">
                   {/* Icon Badge */}
                   <div className={`inline-flex items-center gap-2 px-3 py-1 rounded-full bg-gradient-to-r ${exp.color} bg-opacity-10 mb-4`}>

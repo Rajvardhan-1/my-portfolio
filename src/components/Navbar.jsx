@@ -51,28 +51,15 @@ function Navbar() {
       initial={{ y: -100 }}
       animate={{ y: 0 }}
       transition={{ duration: 0.6, ease: 'easeOut' }}
-      className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
+      className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 flex justify-center ${
         isScrolled
           ? 'bg-[#0a0a0f]/80 backdrop-blur-xl border-b border-white/5 shadow-lg shadow-black/20'
           : 'bg-transparent'
       }`}
     >
-      <div className="max-w-6xl mx-auto px-6 py-4 flex items-center justify-between">
-        {/* Logo */}
-        <motion.a
-          href="#home"
-          onClick={(e) => { e.preventDefault(); handleNavClick('#home'); }}
-          className="text-2xl font-bold font-[Outfit] cursor-pointer"
-          whileHover={{ scale: 1.05 }}
-          whileTap={{ scale: 0.95 }}
-        >
-          <span className="gradient-text">R</span>
-          <span className="text-white">aj</span>
-          <span className="text-gray-500 text-lg">.dev</span>
-        </motion.a>
-
-        {/* Desktop Links */}
-        <div className="hidden md:flex items-center gap-1">
+      <div className="max-w-4xl mx-auto px-6 py-4 flex items-center justify-between w-full">
+        {/* Desktop Links (Left) */}
+        <div className="hidden md:flex items-center gap-4">
           {navLinks.map((link) => (
             <a
               key={link.name}
@@ -96,16 +83,7 @@ function Navbar() {
           ))}
         </div>
 
-        {/* Desktop CTA */}
-        <a
-          href="#contact"
-          onClick={(e) => { e.preventDefault(); handleNavClick('#contact'); }}
-          className="hidden md:block glow-btn glow-btn-primary text-sm !py-2 !px-6"
-        >
-          Hire Me
-        </a>
-
-        {/* Mobile Toggle */}
+        {/* Mobile Toggle (Left) */}
         <button
           onClick={() => setIsMobileOpen(!isMobileOpen)}
           className="md:hidden text-white text-2xl p-2"
@@ -113,6 +91,29 @@ function Navbar() {
         >
           {isMobileOpen ? <HiX /> : <HiMenuAlt3 />}
         </button>
+
+        {/* Logo and Hire Me (Right) */}
+        <div className="flex items-center gap-6">
+          <motion.a
+            href="#home"
+            onClick={(e) => { e.preventDefault(); handleNavClick('#home'); }}
+            className="text-2xl font-bold font-[Outfit] cursor-pointer"
+            whileHover={{ scale: 1.05 }}
+            whileTap={{ scale: 0.95 }}
+          >
+            <span className="gradient-text">R</span>
+            <span className="text-white">aj</span>
+            <span className="text-gray-500 text-lg">.dev</span>
+          </motion.a>
+
+          <a
+            href="#contact"
+            onClick={(e) => { e.preventDefault(); handleNavClick('#contact'); }}
+            className="hidden md:block glow-btn glow-btn-primary text-sm !py-2 !px-6"
+          >
+            Hire Me
+          </a>
+        </div>
       </div>
 
       {/* Mobile Menu */}

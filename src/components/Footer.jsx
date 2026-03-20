@@ -3,8 +3,8 @@ import { HiPrinter } from 'react-icons/hi';
 
 function Footer() {
   return (
-    <footer className="relative border-t border-white/5 bg-[#0a0a0f]/80 backdrop-blur-sm">
-      <div className="max-w-6xl mx-auto px-6 py-12">
+    <footer className="relative border-t border-white/5 bg-[#0a0a0f]/80 backdrop-blur-sm flex justify-center">
+      <div className="max-w-4xl mx-auto px-6 py-12">
         <div className="flex flex-col md:flex-row items-center justify-between gap-6">
           <div className="text-center md:text-left">
             <a href="#home" className="text-xl font-bold font-[Outfit]">

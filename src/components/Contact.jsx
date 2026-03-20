@@ -50,11 +50,11 @@ function Contact() {
   };
 
   return (
-    <section id="contact" className="relative py-36 px-6">
+    <section id="contact" className="relative min-h-screen py-24 px-10 flex items-center justify-center">
       <div className="gradient-orb w-[400px] h-[400px] bg-cyan-500 bottom-[-10%] left-[-5%]" />
       <div className="gradient-orb w-[300px] h-[300px] bg-purple-600 top-[10%] right-[-5%]" />
 
-      <div className="max-w-6xl mx-auto" ref={ref}>
+      <div className="max-w-4xl mx-auto" ref={ref}>
         {/* Section Title */}
         <motion.div
           initial={{ opacity: 0, y: 30 }}

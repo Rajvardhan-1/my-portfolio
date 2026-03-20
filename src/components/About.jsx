@@ -26,11 +26,11 @@ function About() {
   const isInView = useInView(ref, { once: true, margin: '-100px' });
 
   return (
-    <section id="about" className="relative py-36 px-6">
+    <section id="about" className="relative min-h-screen py-24 px-10 flex items-center justify-center">
       {/* Background */}
       <div className="gradient-orb w-[400px] h-[400px] bg-purple-600 top-[0] right-[-5%]" />
 
-      <div className="max-w-6xl mx-auto" ref={ref}>
+      <div className="max-w-4xl mx-auto" ref={ref}>
         {/* Section Title */}
         <motion.div
           initial={{ opacity: 0, y: 30 }}
