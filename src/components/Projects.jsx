@@ -68,7 +68,7 @@ const projects = [
     icon: <FaInstagram className="text-3xl" />,
     gradient: 'from-fuchsia-500 to-pink-600',
     period: 'Mar 2026',
-    link: 'https://raj-insta-clone.vercel.app',
+    link: 'https://raj-insta-clone-uj43.vercel.app',
     highlights: [
       'New Professional 3-column UI: Sidebar, Stories, & Suggestions',
       'Real-time User Search & Messaging with Debounced API Calls',
