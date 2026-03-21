@@ -2,7 +2,7 @@ import { motion, useInView } from 'framer-motion';
 import { useRef, useState } from 'react';
 import { HiExternalLink } from 'react-icons/hi';
 import { SiPython, SiReact } from 'react-icons/si';
-import { FaBrain, FaMusic, FaCode, FaJava } from 'react-icons/fa';
+import { FaBrain, FaMusic, FaCode, FaJava, FaInstagram } from 'react-icons/fa';
 
 const projects = [
   {
@@ -59,6 +59,20 @@ const projects = [
       'Core Java implementation',
       'User input validation and secure handling',
       'Object-Oriented Programming (OOP) principles',
+    ],
+  },
+  {
+    title: 'Instagram Clone',
+    description: 'A full-stack Instagram clone featuring user authentication, image posts, likes, and comments. Built with a React frontend and a Spring Boot backend, utilizing a modern tech stack for a seamless social media experience.',
+    tech: ['React JS', 'Spring Boot', 'Java', 'Tailwind CSS'],
+    icon: <FaInstagram className="text-3xl" />,
+    gradient: 'from-fuchsia-500 to-pink-600',
+    period: 'Mar 2026',
+    link: 'https://raj-insta-clone.vercel.app',
+    highlights: [
+      'Full-stack social media application',
+      'Spring Boot REST API backend',
+      'React frontend with Tailwind CSS',
     ],
   },
 ];
