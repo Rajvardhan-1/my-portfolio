@@ -62,17 +62,17 @@ const projects = [
     ],
   },
   {
-    title: 'Instagram Clone',
-    description: 'A full-stack Instagram clone featuring user authentication, image posts, likes, and comments. Built with a React frontend and a Spring Boot backend, utilizing a modern tech stack for a seamless social media experience.',
-    tech: ['React JS', 'Spring Boot', 'Java', 'Tailwind CSS'],
+    title: 'Professional Instagram Clone',
+    description: 'A high-end, full-stack Instagram clone with a premium 3-column layout (Sidebar, Stories, & Suggestions). Features real-time, debounced user search, instant messaging initiation, and a robust Spring Boot/JWT security backend.',
+    tech: ['React JS', 'Spring Boot', 'Java', 'Tailwind CSS', 'JWT Security'],
     icon: <FaInstagram className="text-3xl" />,
     gradient: 'from-fuchsia-500 to-pink-600',
     period: 'Mar 2026',
     link: 'https://raj-insta-clone.vercel.app',
     highlights: [
-      'Full-stack social media application',
-      'Spring Boot REST API backend',
-      'React frontend with Tailwind CSS',
+      'New Professional 3-column UI: Sidebar, Stories, & Suggestions',
+      'Real-time User Search & Messaging with Debounced API Calls',
+      'Enahanced Dual Login (Username/Email) with JWT Security',
     ],
   },
 ];
