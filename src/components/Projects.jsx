@@ -12,7 +12,7 @@ const projects = [
     icon: <FaBrain className="text-3xl" />,
     gradient: 'from-cyan-500 to-blue-600',
     period: 'Mar 2022 — Apr 2023',
-    link: 'https://aspect-based-music-recommendation-system.onrender.com',
+    link: 'https://aspect-based-music-recommendation-system-dv65.onrender.com/',
     highlights: [
       'Utilized CNNs to analyze facial expressions',
       'Trained CNN model to recognize emotional patterns',
