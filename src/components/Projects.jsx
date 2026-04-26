@@ -2,7 +2,7 @@ import { motion, useInView } from 'framer-motion';
 import { useRef, useState } from 'react';
 import { HiExternalLink } from 'react-icons/hi';
 import { SiPython, SiReact } from 'react-icons/si';
-import { FaBrain, FaMusic, FaCode, FaJava, FaInstagram } from 'react-icons/fa';
+import { FaBrain, FaMusic, FaCode, FaJava, FaInstagram, FaShoppingCart } from 'react-icons/fa';
 
 const projects = [
   {
@@ -73,6 +73,20 @@ const projects = [
       'New Professional 3-column UI: Sidebar, Stories, & Suggestions',
       'Real-time User Search & Messaging with Debounced API Calls',
       'Enahanced Dual Login (Username/Email) with JWT Security',
+    ],
+  },
+  {
+    title: 'LUXE — Premium E-Commerce Store',
+    description: 'A stunning, dark-themed e-commerce storefront built with Next.js 16, featuring a product catalog, cart management, and integrated Razorpay & UPI payment gateway with Paytm, Google Pay, and PhonePe support.',
+    tech: ['Next.js', 'TypeScript', 'Tailwind CSS', 'Razorpay', 'UPI'],
+    icon: <FaShoppingCart className="text-3xl" />,
+    gradient: 'from-amber-500 to-yellow-600',
+    period: 'Apr 2026',
+    link: 'https://my-app-one-eta-35.vercel.app',
+    highlights: [
+      'Dark-mode-first design with gold accent glassmorphism UI',
+      'Razorpay checkout SDK & UPI payment integration',
+      'Full shopping flow: catalog, cart, checkout, order confirmation',
     ],
   },
 ];
